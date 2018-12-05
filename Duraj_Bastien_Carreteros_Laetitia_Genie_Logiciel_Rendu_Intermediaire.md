@@ -186,7 +186,7 @@ D'après la figure ci-dessus nous pouvons constater que ce dossier malgré son i
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Short%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "Analyse BetterCodeHub sur la taille des méthodes")
 
 fig. 18 Analyse de la qualité sur la taille des méthodes
-[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "
 Analyse BetterCodeHub sur la simplicité des méthodes")
 
 fig. 19 Analyse de la qualité sur la simplicité des méthodes
@@ -194,7 +194,7 @@ fig. 19 Analyse de la qualité sur la simplicité des méthodes
 Dans ces analyses nous pouvons voir que certaines méthodes font largements plus que les 15 lines de codes recommandées. En regardant plus attentivement les fichiers concerné , nous pouvons en déduire qu'il serait effectivement possible de plus fractionner en des sous fonctions pour réduire se nombre de lignes. Ce qui aurait aussi comme conséquences de d'augmenter la simplicité des méthodes.
 
 
-[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Nombre%20parametres%20methodes%20Code%20Better%20Code%20Hub.png?raw=true "
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Nombre%20parametres%20methodes%20Code%20Better%20Code%20Hub.png?raw=true "
 Analyse BetterCodeHub sur le nombre de paramètres des méthodes")
 
 fig. 20 Analyse BetterCodeHub sur le nombre de paramètres des méthodes
