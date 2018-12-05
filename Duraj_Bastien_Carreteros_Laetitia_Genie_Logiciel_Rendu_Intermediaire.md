@@ -127,7 +127,7 @@ fig. 11 Diagramme des classes du package "graphics"
 
 Mais celui-ci n'est pas divisé en sous-partie comme dans le package tools (voir figure 12).
 
-![Diagramme de packages de tools et graphics](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/PackageToolsDiagram.png?raw=true "Diagramme de packages du package Tools et du package Graphics)
+![Diagramme de packages de tools et graphics](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/PackageToolsDiagram.png?raw=true "Diagramme de packages du package Tools et du package Graphics")
 
 fig. 12 Diagramme de packages du package "Tools" et du package "Graphics"
 
@@ -268,4 +268,8 @@ Nous avons également trouvé un boost flyweight qui pourrait suggérer l'utilis
 
 ## Conclusion qualité du code
 
-Il y a plusieurs points faible dans les parties que nous avons étudié. Cependant on peut noté une envie d'accomplir se projet dans des bonnes conditions stucturé.
+Il y a plusieurs points faible dans les parties que nous avons étudié. Cependant on peut noté une envie d'accomplir se projet dans des bonnes conditions stucturées mise en évidence par la documentation.
+
+
+# Conclusion
+
