@@ -162,7 +162,16 @@ fig. 16 Diagramme de séquence dans le cas d'une partie jouée contre une IA
 
 Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionnement du logiciel. Le moteur de jeu gère ici l'aspect controller, il reçoit des évènements puis appel en consèquence les bons modules chacun gèrant une partie du logiciel comme l'IA, le rendu, la caméra, le pathfinding, les animations, ect ... .
 
-## Analyse de la qualité du code
+### Conclusion sur l'architecture
+Les différents diagrammes que nous avons présentés nous ont permis d'en déduire une architecture pour le logiciel que voici:
+
+![Architecture logicielle](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/GameEngine.png?raw=true "Architecture du logiciel")
+
+fig. 17 Architecture globale du logiciel
+
+L'architecture est donc centré autour du moteur de jeu qui regroupe les différents composants essentiels au fonctionnement du jeu. Le moteur s'occupe de récupérer et d'interpréter les évènements transmis par le joueur (selectionner un élèment, charger une partie, ...) et de synchroniser l'utilisation de tous ces composants
+pour éviter les problèmes de concurrences. 
+### Analyse de la qualité du code
 Pour analyser la qualité du code nous allons utiliser différentes métrique sur certaines parties de celui-ci. Pour déterminer si le code réponds à ses critères nous avons utilisé différents logiciels , notamment CodeScene , BetterCodeHub et CppCheck.
 Les critères que que nous avons retenu sont :
 
@@ -222,13 +231,10 @@ static void AddTerrainEdges(std::vector<Edge>& edges, std::vector<Vertex>& verte
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/AutomatesTest%20Code%20Better%20Code%20Hub.png?raw=true "
 Analyse BetterCodeHub sur l'automatisation des test")
-
-Nous pouvons voir que d'après BetterCodeHub il n'y a aucun test automatiser. Ce serait donc un point à améliorer. Cependant il y a quand même un sous-dossier tests dans cette section.
-
 fig. 21 Analyse BetterCodeHub sur l'automatisation des test
 
 
-
+Nous pouvons voir que d'après BetterCodeHub il n'y a aucun test automatiser. Ce serait donc un point à améliorer. Cependant il y a quand même un sous-dossier tests dans cette section.
 
 
 ## binaries\data
@@ -238,6 +244,7 @@ Avec CodeScene nous avons pu retirer quelques informations parmi les fichiers pr
 
 ![Analyse CodeScene](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/refactoring%20target.png?raw=true "
 Analyse CodeScene refactoring candidats")
+fig. 22 Analyse CodeScene refactoring candidats
 
 Nous avons regardé le fichier UnitIA.js suite à cela , et nous avons pu noter la grosseur d'un tel fichier : 6140 lignes. Nous émettons donc l'hypothèse que ce fichier pourrait être réduit en étant séparé en plusieurs modules.
 
@@ -252,13 +259,8 @@ Malgré quelques problèmes de qualité , nous trouvons que pour un logiciel lib
 Nous pouvons trouver également un système de tickets répertoriant les différentes tâches à faire ou qui sont en cours de production ,ainsi qu'un forum.
 Nous pouvons trouver aussi des informations sur la raison du choix des languages , des consignes de conventions de codage , la suggestion d'utiliser des objets mocks, un endroit où reporter les beug.
 Cependant il est précisé à certain endroits que certaines informations peuvent daté , notamment en ce qui concerne le design.
+Le code possède des commentaires clair pour des sujets important. Notamment sur l'utilisation de design pattern. Nous avons pu trouver des fichiers singleton avec en commentaires leurs utilité et dans quel cas les utiliser. Ils font également partie des recommendations sur l'utilisation de ce design pattern dans la documentation du logiciel.
 
-### Conclusion sur l'architecture
-Les différents diagrammes que nous avons présentés nous ont permis d'en déduire une architecture pour le logiciel que voici:
+## Conclusion qualité du code
 
-![Architecture logicielle](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/GameEngine.png?raw=true "Architecture du logiciel")
-
-fig. 17 Architecture globale du logiciel
-
-L'architecture est donc centré autour du moteur de jeu qui regroupe les différents composants essentiels au fonctionnement du jeu. Le moteur s'occupe de récupérer et d'interpréter les évènements transmis par le joueur (selectionner un élèment, charger une partie, ...) et de synchroniser l'utilisation de tous ces composants
-pour éviter les problèmes de concurrences.
+Il y a plusieurs points faible dans les parties que nous avons étudié. Cependant on peut noté une envie d'accomplir se projet dans des bonnes conditions stucturé.
