@@ -187,7 +187,7 @@ D'après la figure ci-dessus nous pouvons constater que ce dossier malgré son i
 
 fig. 18 Analyse de la qualité sur la taille des méthodes
 
-[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png "Analyse BetterCodeHub sur la simplicité des méthodes")
+[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "Analyse BetterCodeHub sur la simplicité des méthodes")
 
 fig. 19 Analyse de la qualité sur la simplicité des méthodes
 
