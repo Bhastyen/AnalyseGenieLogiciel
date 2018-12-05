@@ -162,6 +162,8 @@ fig. 16 Diagramme de séquence dans le cas d'une partie jouée contre une IA
 
 Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionnement du logiciel. Le moteur de jeu gère ici l'aspect controller, il reçoit des évènements puis appel en consèquence les bons modules chacun gèrant une partie du logiciel comme l'IA, le rendu, la caméra, le pathfinding, les animations, ect ... .
 
+## Analyse de la qualité du code
+Pour analyser la qualité du code nous allons utiliser différentes métrique sur certaines parties du code. Pour déterminer si le code réponds à ses critères nous avons utilisé différents logiciels , notamment CodeScene , BetterCodeHub et CppCheck.
 ### Conclusion sur l'architecture
 Les différents diagrammes que nous avons présentés nous ont permis d'en déduire une architecture pour le logiciel que voici:
 
