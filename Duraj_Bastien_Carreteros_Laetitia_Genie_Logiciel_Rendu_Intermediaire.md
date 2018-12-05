@@ -187,11 +187,29 @@ D'après la figure ci-dessus nous pouvons constater que ce dossier malgré son i
 
 fig. 18 Analyse de la qualité sur la taille des méthodes
 
-[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "Analyse BetterCodeHub sur la simplicité des méthodes")
+[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Nombre%20parametres%20methodes%20Code%20Better%20Code%20Hub.png?raw=true "Analyse BetterCodeHub sur la simplicité des méthodes")
 
 fig. 19 Analyse de la qualité sur la simplicité des méthodes
 
 Dans ces analyses nous pouvons voir que certaines méthodes font largements plus que les 15 lines de codes recommandées. En regardant plus attentivement les fichiers concerné , nous pouvons en déduire qu'il serait effectivement possible de plus fractionner en des sous fonctions pour réduire se nombre de lignes. Ce qui aurait aussi comme conséquences de d'augmenter la simplicité des méthodes.
+
+[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "Analyse BetterCodeHub sur le nombre de paramètres des méthodes")
+
+fig. 20 Analyse BetterCodeHub sur le nombre de paramètres des méthodes
+
+Nous pouvons voir un problème sur le nombre de paramètre pouvant atteindre le nombre de 10. Certains cas pourrait être éviter , notamment en créeant des structures. Comme par exemple dans la fonction suivante où une structure de coordonnées aurait pu être mise en place :
+
+static void ConstructCircleOrClosedArc(
+	const CSimContext& context, float x, float z, float radius,
+	bool isCircle,
+	float start, float end,
+	SOverlayLine& overlay, bool floating, float heightOffset)
+
+De plus certains paramètres ne sont pas clair sur leur signification comme par exemple dans la méthode :
+
+static void AddTerrainEdges(std::vector<Edge>& edges, std::vector<Vertex>& vertexes,
+	int i0, int j0, int i1, int j1,
+	pass_class_t passClass, const Grid<NavcellData>& grid)
 
 
 
