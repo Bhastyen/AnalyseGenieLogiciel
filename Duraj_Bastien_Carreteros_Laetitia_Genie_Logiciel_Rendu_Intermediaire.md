@@ -259,7 +259,12 @@ Malgré quelques problèmes de qualité , nous trouvons que pour un logiciel lib
 Nous pouvons trouver également un système de tickets répertoriant les différentes tâches à faire ou qui sont en cours de production ,ainsi qu'un forum.
 Nous pouvons trouver aussi des informations sur la raison du choix des languages , des consignes de conventions de codage , la suggestion d'utiliser des objets mocks, un endroit où reporter les beug.
 Cependant il est précisé à certain endroits que certaines informations peuvent daté , notamment en ce qui concerne le design.
-Le code possède des commentaires clair pour des sujets important. Notamment sur l'utilisation de design pattern. Nous avons pu trouver des fichiers singleton avec en commentaires leurs utilité et dans quel cas les utiliser. Ils font également partie des recommendations sur l'utilisation de ce design pattern dans la documentation du logiciel.
+Le code possède des commentaires clair pour des sujets important. 
+
+# Design Pattern
+Notamment sur l'utilisation de design pattern. Nous avons pu trouver des fichiers singleton avec en commentaires leurs utilité et dans quel cas les utiliser. Ils font également partie des recommendations sur l'utilisation de ce design pattern dans la documentation du logiciel.
+Nous avons également trouvé un boost flyweight qui pourrait suggérer l'utilisation du pattern flyweight.
+
 
 ## Conclusion qualité du code
 
