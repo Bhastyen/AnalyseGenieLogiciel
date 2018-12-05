@@ -173,9 +173,10 @@ La complexité cyclomatique
 
 Sur les 3.436.103 lines de code disponible nous avons porté notre analyse sur certains dossiers qui nous semble plus important pour le jeu.
 
-##source/simulation2
+## source/simulation2
 
-Nous avons choisi de regarder ce dossier car il nous semble une des parties centrale du jeu. Les fichiers étant ayant comme language C++ , ils permettent notamments de gérer les fondations du jeu qui vont être par la suite compléter par du javascript (dossier binaries qui sera aussi analyser tantôt).
+Nous avons choisi de regarder ce dossier car il nous semble une des parties centrale du jeu. 
+Il définit les classes utilisées par la simulation. Les composants qui implémentent la logique du moteur sont inclus ici, ainsi que les classes de sérialisation et d'aide. Certains composants sont implémentés en JavaScript et définissent optionnellement les interfaces JavaScript et C++ (ces composants sont inclus par mods, dans le répertoire binaries\data). 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testBetterCodeSimulation2.png?raw=true "Analyse de la qualité du dossier simulation2 avec BetterCodeHub")
 
 fig. 17 Analyse de la qualité du dossier simulation2 avec BetterCodeHub
@@ -219,12 +220,32 @@ static void AddTerrainEdges(std::vector<Edge>& edges, std::vector<Vertex>& verte
 
 ```
 
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/AutomatesTest%20Code%20Better%20Code%20Hub.png?raw=true "
+Analyse BetterCodeHub sur l'automatisation des test")
+
+Nous pouvons voir que d'après BetterCodeHub il n'y a aucun test automatiser. Ce serait donc un point à améliorer. Cependant il y a quand même un sous-dossier tests dans cette section.
+
+fig. 21 Analyse BetterCodeHub sur l'automatisation des test
 
 
 
 
-##binaries
-=
+
+## binaries\data
+
+Binaries\data nous semblait un dossier égalemet intéréssant à analyser.
+Avec CodeScene nous avons pu retirer quelques informations parmi les fichiers proposés:
+
+![Analyse CodeScene](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/refactoring%20target.png?raw=true "
+Analyse CodeScene refactoring candidats")
+
+Nous avons regardé le fichier UnitIA.js suite à cela , et nous avons pu noter la grosseur d'un tel fichier : 6140 lignes. Nous émettons donc l'hypothèse que ce fichier pourrait être réduit en étant séparé en plusieurs modules.
+
+Cependant parmi tous les fichiers Javascript disponible nous trouvons que la quantité de fichiers proposé en refactoring était moindre.
+
+Gamesetup.js possède également un nombre de ligne assez conséquent : 2331 , qui devrait probablement être remanié.
+
+
 
 
 25 Auteurs.
