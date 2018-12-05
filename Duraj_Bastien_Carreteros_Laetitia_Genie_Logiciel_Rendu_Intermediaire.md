@@ -166,10 +166,10 @@ Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionne
 Pour analyser la qualité du code nous allons utiliser différentes métrique sur certaines parties de celui-ci. Pour déterminer si le code réponds à ses critères nous avons utilisé différents logiciels , notamment CodeScene , BetterCodeHub et CppCheck.
 Les critères que que nous avons retenu sont :
 
-La longueur de classe
-La longueur des méthodes
-Le nombre de paramètres
-La complexité cyclomatique
+La longueur de classe /
+La longueur des méthodes /
+Le nombre de paramètres /
+
 
 Sur les 3.436.103 lines de code disponible nous avons porté notre analyse sur certains dossiers qui nous semble plus important pour le jeu.
 
@@ -246,6 +246,12 @@ Cependant parmi tous les fichiers Javascript disponible nous trouvons que la qua
 Gamesetup.js possède également un nombre de ligne assez conséquent : 2331 , qui devrait probablement être remanié.
 
 
+## Qualité du travail d'équipe
+
+Malgré quelques problèmes de qualité , nous trouvons que pour un logiciel libre de jeu vidéo nous avons une bonne documentation du projet. Cette documentation explique l'utilité des différents dossiers pour les programmeurs et les artistes. 
+Nous pouvons trouver également un système de tickets répertoriant les différentes tâches à faire ou qui sont en cours de production ,ainsi qu'un forum.
+Nous pouvons trouver aussi des informations sur la raison du choix des languages , des consignes de conventions de codage , la suggestion d'utiliser des objets mocks, un endroit où reporter les beug.
+Cependant il est précisé à certain endroits que certaines informations peuvent daté , notamment en ce qui concerne le design.
 
 ### Conclusion sur l'architecture
 Les différents diagrammes que nous avons présentés nous ont permis d'en déduire une architecture pour le logiciel que voici:
