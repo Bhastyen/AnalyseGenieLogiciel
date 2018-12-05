@@ -163,7 +163,47 @@ fig. 16 Diagramme de séquence dans le cas d'une partie jouée contre une IA
 Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionnement du logiciel. Le moteur de jeu gère ici l'aspect controller, il reçoit des évènements puis appel en consèquence les bons modules chacun gèrant une partie du logiciel comme l'IA, le rendu, la caméra, le pathfinding, les animations, ect ... .
 
 ## Analyse de la qualité du code
-Pour analyser la qualité du code nous allons utiliser différentes métrique sur certaines parties du code. Pour déterminer si le code réponds à ses critères nous avons utilisé différents logiciels , notamment CodeScene , BetterCodeHub et CppCheck.
+Pour analyser la qualité du code nous allons utiliser différentes métrique sur certaines parties de celui-ci. Pour déterminer si le code réponds à ses critères nous avons utilisé différents logiciels , notamment CodeScene , BetterCodeHub et CppCheck.
+Les critères que que nous avons retenu sont :
+
+Lq longueur de classe
+La longueur des méthodes
+Le nombre de paramètres
+La complexité cyclomatique
+
+Sur les 3.436.103 lines de code disponible nous avons porté notre analyse sur certains dossiers qui nous semble plus important pour le jeu.
+
+##source/simulation2
+
+Nous avons choisi de regarder ce dossier car il nous semble une des parties centrale du jeu. Les fichiers étant ayant comme language C++ , ils permettent notamments de gérer les fondations du jeu qui vont être par la suite compléter par du javascript (dossier binaries qui sera aussi analyser tantôt).
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testBetterCodeSimulation2.png?raw=true "Analyse de la qualité du dossier simulation2 avec BetterCodeHub")
+
+fig. 17 Analyse de la qualité du dossier simulation2 avec BetterCodeHub
+
+
+D'après la figure ci-dessus nous pouvons constater que ce dossier malgré son importance comporte de nombreux points faibles du point de vue de BetterCodeHub.
+
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Short%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "Analyse BetterCodeHub sur la taille des méthodes")
+
+fig. 18 Analyse de la qualité sur la taille des méthodes
+
+[Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png "Analyse BetterCodeHub sur la simplicité des méthodes")
+
+fig. 19 Analyse de la qualité sur la simplicité des méthodes
+
+Dans ces analyses nous pouvons voir que certaines méthodes font largements plus que les 15 lines de codes recommandées. En regardant plus attentivement les fichiers concerné , nous pouvons en déduire qu'il serait effectivement possible de plus fractionner en des sous fonctions pour réduire se nombre de lignes. Ce qui aurait aussi comme conséquences de d'augmenter la simplicité des méthodes.
+
+
+
+##binaries
+=
+
+
+25 Auteurs.
+Fichiers compléxité haute : 0ad/binaries/data/mods/public/gui/gamesetup/gamesetup.js 
+fonction launch complexity
+There are no structural recommendations. Keep up the good work! 
+Trop de paramètres dans des méthodes/fonctions  parfois même 8 ou 10
 ### Conclusion sur l'architecture
 Les différents diagrammes que nous avons présentés nous ont permis d'en déduire une architecture pour le logiciel que voici:
 
