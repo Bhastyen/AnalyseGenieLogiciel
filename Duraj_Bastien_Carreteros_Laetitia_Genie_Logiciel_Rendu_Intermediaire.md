@@ -268,7 +268,12 @@ Nous avons également trouvé un boost flyweight qui pourrait suggérer l'utilis
 
 ## Conclusion qualité du code
 
-Il y a plusieurs points faible dans les parties que nous avons étudié. Cependant on peut noté une envie d'accomplir se projet dans des bonnes conditions stucturées mise en évidence par la documentation.
+Il y a plusieurs points faibles dans les parties que nous avons étudiées. Cependant on peut noter une envie d'accomplir ce projet dans de bonnes conditions stucturées mise en évidence par la documentation. Cette documentation a beaucoup de détails sur comment les developpeurs doivent travailler par exemple :
+
+![Analyse CodeScene](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/exemple%20documentations.png?raw=true "
+Exemple de la documentation")
+fig. 22 Exemple de la documentation 
+
 
 
 # Conclusion
