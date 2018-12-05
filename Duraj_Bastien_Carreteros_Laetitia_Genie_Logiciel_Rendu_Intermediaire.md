@@ -247,12 +247,6 @@ Gamesetup.js possède également un nombre de ligne assez conséquent : 2331 , q
 
 
 
-
-25 Auteurs.
-Fichiers compléxité haute : 0ad/binaries/data/mods/public/gui/gamesetup/gamesetup.js 
-fonction launch complexity
-There are no structural recommendations. Keep up the good work! 
-Trop de paramètres dans des méthodes/fonctions  parfois même 8 ou 10
 ### Conclusion sur l'architecture
 Les différents diagrammes que nous avons présentés nous ont permis d'en déduire une architecture pour le logiciel que voici:
 
