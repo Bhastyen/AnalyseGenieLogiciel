@@ -201,19 +201,25 @@ fig. 20 Analyse BetterCodeHub sur le nombre de paramètres des méthodes
 
 Nous pouvons voir un problème sur le nombre de paramètre pouvant atteindre le nombre de 10. Certains cas pourrait être éviter , notamment en créeant des structures. Comme par exemple dans la fonction suivante où une structure de coordonnées aurait pu être mise en place :
 
-'static void ConstructCircleOrClosedArc(
+```
+static void ConstructCircleOrClosedArc(
 	const CSimContext& context, float x, float z, float radius,
 	bool isCircle,
 	float start, float end,
-	SOverlayLine& overlay, bool floating, float heightOffset)'
+	SOverlayLine& overlay, bool floating, float heightOffset)
+
+```
 
 De plus certains paramètres ne sont pas clair sur leur signification comme par exemple dans la méthode :
 
-'static void AddTerrainEdges(std::vector<Edge>& edges, std::vector<Vertex>& vertexes,
+```
+static void AddTerrainEdges(std::vector<Edge>& edges, std::vector<Vertex>& vertexes,
 	int i0, int j0, int i1, int j1,
-	pass_class_t passClass, const Grid<NavcellData>& grid)'
+	pass_class_t passClass, const Grid<NavcellData>& grid)
 
-		
+```
+
+
 
 
 
