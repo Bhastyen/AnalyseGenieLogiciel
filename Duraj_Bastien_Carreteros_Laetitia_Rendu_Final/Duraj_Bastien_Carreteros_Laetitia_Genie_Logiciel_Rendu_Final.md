@@ -308,11 +308,11 @@ Nous pouvons voir que sa notation est plus élévé que l'analyse de simulation2
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinariesunitcode.png?raw=true "
 Analyse BetterCodeHub binaries")
-fig. 23 Analyse BetterCodeHub sur le dossier binaries
+fig. 23 Analyse BetterCodeHub Write Simple Units of Code sur le dossier binaries
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinarieswriteshort.png?raw=true "
 Analyse BetterCodeHub binaries")
-fig. 23 Analyse BetterCodeHub sur le dossier binaries
+fig. 23 Analyse BetterCodeHub Write Shorts Units of Code sur le dossier binaries
 
 
 
