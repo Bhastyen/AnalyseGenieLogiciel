@@ -311,11 +311,11 @@ Nous pouvons voir que sa notation est plus élévé que l'analyse de simulation2
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinariesunitcode.png?raw=true "
 Analyse BetterCodeHub binaries")
-fig. 23 Analyse BetterCodeHub Write Simple Units of Code sur le dossier binaries
+fig. 24 Analyse BetterCodeHub Write Simple Units of Code sur le dossier binaries
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinarieswriteshort.png?raw=true "
 Analyse BetterCodeHub binaries")
-fig. 23 Analyse BetterCodeHub Write Shorts Units of Code sur le dossier binaries
+fig. 25 Analyse BetterCodeHub Write Shorts Units of Code sur le dossier binaries
 
 
 
@@ -338,7 +338,7 @@ Il y a plusieurs points faibles dans les parties que nous avons étudié. Cepend
 
 ![Analyse CodeScene](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/exemple%20documentations.png?raw=true "
 Exemple de la documentation")
-fig. 22 Exemple de la documentation
+fig. 26 Exemple de la documentation
 
 Cependant les ajouts qui pourraient être faits sont par exemple une section de mise en évidence de design pattern à utiliser et dans quels cas, une section expliquant l'importance de la création de sous-méthode , la gestion de paramètre. Ce genre de projet devrait conseiller l'utilisation de logiciel comme Better Code Hub et CodeScene lors du développement pour éviter les problèmes que nous avons rencontré.
 
