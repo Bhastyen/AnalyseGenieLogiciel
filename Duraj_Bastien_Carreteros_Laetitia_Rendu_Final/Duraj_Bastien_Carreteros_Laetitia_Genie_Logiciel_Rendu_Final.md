@@ -22,7 +22,6 @@ UQAC, 05 décembre 2018
 		3. Problème de la structuration des classes
 	4. Process View
 		1. Diagramme de séquences lors de l'action d'un joueur
-		2. Analyse du fonctionnement
 	5. Conclusion sur l'architecture
 4. Analyse de la qualité du code
 	1. source/simulation2
@@ -206,9 +205,9 @@ Dans cette partie nous allons juste aborder un point interessant dans lequel nou
 
 fig. 16 Diagramme de séquence dans le cas d'une partie jouée contre une IA
 
-Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionnement du logiciel. Le moteur de jeu gère ici l'aspect controller, il reçoit des évènements puis appel en consèquence les bons modules chacun gèrant une partie du logiciel comme l'IA, le rendu, la caméra, le pathfinding, les animations, ect ... .
+Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionnement du logiciel. Le moteur de jeu gère ici l'aspect controller, il reçoit des évènements puis appel en consèquence les bons modules chacun gèrant une partie du logiciel comme l'IA, le rendu, la caméra, le pathfinding, les animations, etc ... .
 
-#### 2. Analyse du fonctionnement
+
 
 ### Conclusion sur l'architecture
 
