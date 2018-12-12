@@ -297,6 +297,24 @@ Cependant parmi tous les fichiers Javascript disponible nous trouvons que la qua
 
 Gamesetup.js possède également un nombre de ligne assez conséquent : 2331 , qui devrait probablement être remanié.
 
+#### Analyse avec BetterCodeHub de binaries/data
+
+Nous avons également analyser binaries/data avec BetterCode et voici ce que nous en avons retiré : 
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinaries.png?raw=true "
+Analyse BetterCodeHub binaries")
+fig. 23 Analyse BetterCodeHub sur le dossier binaries
+
+Nous pouvons voir que sa notation est plus élévé que l'analyse de simulation2 , cependant il y a des problème récurrents , avec les métriques de qualités de : Write Short Units of Code et Write Simple Units of Code.
+
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinariesunitcode.png?raw=true "
+Analyse BetterCodeHub binaries")
+fig. 23 Analyse BetterCodeHub sur le dossier binaries
+
+![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinarieswriteshort.png?raw=true "
+Analyse BetterCodeHub binaries")
+fig. 23 Analyse BetterCodeHub sur le dossier binaries
+
+
 
 ### Qualité du travail d'équipe
 
