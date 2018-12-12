@@ -35,6 +35,10 @@ UQAC, 05 décembre 2018
 
  Nous allons ici analyser un jeu vidéo libre : 0 A.D. . Il s'agit d'un jeu de stratégie en temps réel, en opposition au jeu de stratégie au tour par tour. Celui-ci propose de jouer avec une dizaine de civilisations ayant vécu de l'an 500 av. JC jusqu'à l'an 0. Le jeu peut être joué aussi bien tout seul qu'à plusieurs.
 
+ ![Frise](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/frise.png?raw=true)
+
+fig. 0 Chronologie simplifié de 0.a.d
+
  Né du jeu de stratégie en temps réel, Age of empires, lequel a été développé en parti par Relic Entertainment et édité par Microsoft Studios, le jeu était au départ un mod, c'est-à-dire qu'il utilisait les technologies et les ressources d'un jeu existant. Dans ce cas précis il s'agissait d'un mod du second volet de la saga: Age of empires II: The Age of  Kings. Le but premier était de recréer Age of empires avec les technologies du second jeu mais le projet a fini par évoluer et devenir totalement autonome.
 
  0 A.D. a, dans un premier temps, été en développement fermé avec la société Wildfire Games en 2002. Mais au cours de l'année 2009 l'entreprise décide d'ouvrir le développement et le code, permettant ainsi à qui le souhaite de participer.
