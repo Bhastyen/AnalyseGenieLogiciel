@@ -159,7 +159,7 @@ fig. 11 Diagramme des classes du package "graphics"
 
 Mais celui-ci n'est pas divisé en sous-partie comme dans le package tools (voir figure 12).
 
-![Diagramme de packages de tools et graphics](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/PackageToolsDiagram.png?raw=true "Diagramme de packages du package Tools et du package Graphics)
+![Diagramme de packages de tools et graphics](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/PackageToolsDiagram.png?raw=true "Diagramme de packages du package Tools et du package Graphics")
 
 fig. 12 Diagramme de packages du package "Tools" et du package "Graphics"
 
