@@ -39,7 +39,7 @@ UQAC, 05 décembre 2018
 
 fig. 0 Chronologie simplifié de 0.a.d
 
- Né du jeu de stratégie en temps réel, Age of empires, lequel a été développé en parti par Relic Entertainment et édité par Microsoft Studios, le jeu était au départ un mod, c'est-à-dire qu'il utilisait les technologies et les ressources d'un jeu existant. Dans ce cas précis il s'agissait d'un mod du second volet de la saga: Age of empires II: The Age of  Kings developpé par Wildfire Studio , cependant ils ont été frustré par la limitation à ne pas pouvoir accéder à tout le code. Il y a eu d'autres organisations : Tonto Clan , qui ont voulu proposé un mod a Age of Empire II mais qui à été recalé car la société était en développement de Age of Mythologie. Les autres participants aux prémises de 0.A.D sont les développeur du mod The Last Alliance. Tous les trois vont former Wildfire Games.
+ Né du jeu de stratégie en temps réel, Age of empires, lequel a été développé en parti par Relic Entertainment et édité par Microsoft Studios, le jeu était au départ un mod, c'est-à-dire qu'il utilisait les technologies et les ressources d'un jeu existant. Dans ce cas précis il s'agissait d'un mod du second volet de la saga: Age of empires II: The Age of  Kings developpé par Wildfire Studio , cependant ils ont été frustré par la limitation à ne pas pouvoir accéder à tout le code. Il y a eu d'autres organisations : Tonto Clan , qui ont voulu proposé un mod a Age of Empire II mais qui à été recalé car la société était en développement de Age of Mythology. Les autres participants aux prémises de 0.A.D sont les développeur du mod The Last Alliance. Tous les trois vont former Wildfire Games.
 
  0 A.D. a, dans un premier temps, été en développement fermé avec la société Wildfire Games en 2002. Mais au cours de l'année 2009 l'entreprise décide d'ouvrir le développement et le code, permettant ainsi à qui le souhaite de participer.
 
@@ -74,7 +74,7 @@ Une autre possibilité est de choisir la capacité limite de population dans une
 fig. 3 Configuration nouvelle partie / Paramètres global joueurs
 
 
-La manière de terminer / gagner une partie peut également être déterminée par l'onglet "type de jeu". Nous pouvons aussi ajouter plusieurs conditions simultanées pour gagner ce qui complexifi grandement le jeu.
+La manière de terminer / gagner une partie peut également être déterminée par l'onglet "type de jeu". Nous pouvons aussi ajouter plusieurs conditions simultanées pour gagner ce qui complexifie grandement le jeu.
 ![choix carte 3 ](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/choixCarte3.png?raw=true)
 
 fig. 4 Configuration nouvelle partie / Paramètres fin de partie
