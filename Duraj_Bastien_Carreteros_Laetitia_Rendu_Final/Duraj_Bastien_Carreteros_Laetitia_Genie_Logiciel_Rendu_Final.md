@@ -39,7 +39,7 @@ UQAC, 05 décembre 2018
 
  ![Frise](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/frise.png?raw=true)
 
-fig. 0 Chronologie simplifié de 0.a.d
+ **fig. 0 Chronologie simplifié de 0.a.d**
 
  Né du jeu de stratégie en temps réel, Age of empires, lequel a été développé en parti par Relic Entertainment et édité par Microsoft Studios, le jeu était au départ un mod, c'est-à-dire qu'il utilisait les technologies et les ressources d'un jeu existant. Dans ce cas précis il s'agissait d'un mod du second volet de la saga: Age of empires II: The Age of  Kings developpé par Wildfire Studio , cependant ils ont été frustré par la limitation à ne pas pouvoir accéder à tout le code. Il y a eu d'autres organisations : Tonto Clan , qui ont voulu proposer un mod a Age of Empire II mais qui à été recalé car la société était en développement de Age of Mythology. Les autres participants aux prémises de 0.A.D sont les développeur du mod The Last Alliance. Tous les trois vont former Wildfire Games.
 
@@ -60,7 +60,7 @@ Au lancement du logiciel nous nous retrouvons donc avec une interface nous perme
 
 ![alt text](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/accueil0ad.png?raw=true)
 
-fig. 1 Menu principale du jeu
+**fig. 1 Menu principal du jeu**
 
 
 Si nous décidons de jouer une partie, ce qui est la fonctionnalité centrale de tout jeu vidéo, nous pouvons , comme montré à la figure 2 , 3 et 4, choisir la faction que nous voulons jouer, le type de carte (qui définit le nombre de joueurs), la difficulté des IA , et la possibilité de créer des équipes. Pour le choix du type de cartes il y a à disposition différents filtres : nouvelles cartes, cartes navales, carte de démonstration , carte à déclencheurs et toutes les cartes, ceci permet de ne montrer que les cartes qui nous intéressent.
@@ -68,18 +68,18 @@ Une fois la carte choisie nous pouvons décider si nous voulons avoir la carte r
 
 ![choix carte 1 ](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/choixCarte1.png?raw=true)
 
-fig. 2 Configuration nouvelle partie / Paramètres carte
+**fig. 2 Configuration nouvelle partie / Paramètres carte**
 
 Une autre possibilité est de choisir la capacité limite de population dans une civilisation ainsi que le nombre de ressources de départ pour personnaliser sa partie et ne pas vivre toujours la même expérience de jeu.
 ![choix carte 2 ](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/choixCarte2.png?raw=true)
 
-fig. 3 Configuration nouvelle partie / Paramètres global joueurs
+**fig. 3 Configuration nouvelle partie / Paramètres global joueurs**
 
 
 La manière de terminer / gagner une partie peut également être déterminée par l'onglet "type de jeu". Nous pouvons aussi ajouter plusieurs conditions simultanées pour gagner ce qui complexifie grandement le jeu.
 ![choix carte 3 ](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/choixCarte3.png?raw=true)
 
-fig. 4 Configuration nouvelle partie / Paramètres fin de partie
+**fig. 4 Configuration nouvelle partie / Paramètres fin de partie**
 
 La configuration d'une partie est donc très complète et au même niveau que des triple A tels que Starcraft ou encore Age of empires.
 
@@ -93,7 +93,7 @@ Le jeu intègre également une notion de territoires qui limite la construction 
 
 ![Interface lors d'une partie](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/debutjeu0ad.png?raw=true)
 
-fig. 5 Interface de jeu lors d'une partie
+**fig. 5 Interface de jeu lors d'une partie**
 
 Ce premier pas dans les nombreuses fonctionnalités du jeu permet dans un premier temps de comprendre le but recherché par les développeur : créer un jeu de stratégie open source le plus complet possible avec un grand niveau de qualité. Puis dans un second temps de mieux comprendre l'analyse des fonctionnalités présente dans la prochaine partie.   
 
@@ -105,13 +105,15 @@ Pour comprendre le fonctionnement de ce logiciel nous avons tout d'abord analys�
 #### 1. Présentation des grandes fonctionnalités
 ![Diagramme des packages](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/PackageDiagram1v2.png?raw=true)
 
-fig. 6 Diagramme représentant les grandes fonctionnalités du jeu
+**fig. 6 Diagramme représentant les grandes fonctionnalités du jeu**
 
 
 Nous avons donc diviser en 6 parties les différentes utilisations possibles du jeu avec 2 acteurs humains, les joueurs et les développeurs, et un acteur système représentant l'intelligence artificiel du jeu: Petra. Alors que le développeur peut faire tout ce que le joueur peut, en plus de la possibilité d'utiliser une console, l'IA ne peut que jouer une partie. Le joueur a donc un nombre important de fonctionnalités à disposition ce qui montre la volonté des développeurs de créer un jeu rivalisant en terme de fonctionnalité avec des jeux commerciaux. Cet aspet est important car si le jeu a le mérite de proposer beaucoup de fonctionnalités nous verrons par la suite que l'architecture en souffre quelque peu.
 
 #### 2. Présentation des fonctionnalités
 ![Diagramme des packages](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/ArbreFonctionnalite.png?raw=true)
+
+**fig. 7 Diagramme représentant les différentes fonctionnalités**
 
 En ce qui concerne l'organisation des fonctionnalités, celle-ci est très classique et on sent que le jeu s'est inspiré de son père spirituel Age of Empires. Les parties solo et multijoueur du titre sont séparées ce qui montre une envie de proposer plusieurs façons de jouer. On trouve également en premier dans le menu du jeu la possibilité d'apprendre à jouer avec un manuel, des tutoriels et des informations sur les éléments du jeu, encore une fois beaucoup de possibilités et une envie évidente d'inviter le joueur à rejoindre la communauté du jeu dans les meilleurs conditions. Le jeu propose encore deux fonctionnalités. La première permet de régler le jeu selon ses envies : graphismes, contrôle, son, ... on peut même apercevoir la gestion des mods qui permet à qui le veut de personnaliser le logiciel de manière très poussé. Encore une fois très complet. La dernière très intéressante permet de créer à l'envie des cartes pour le jeu, cet outil très puissant est d'ailleurs utilisé par les game designers pour générer des fichiers xml automatiquement représentant la carte à intégrer dans le jeu. Elle est ensuite lu par le moteur qui pourra la stocker en mémoire et l'afficher. L'outil qui s'appelle Atlas propose de nombreuses fonctionnalités non détaillé ici comme la création de terrains avec différents peinceaux, la possibilité de peindre le terrain avec des textures, ... . Le jeu se veut donc à tout point de vue complet et intègre un nombre impressionnant de fonctionnalité.
 
@@ -122,7 +124,7 @@ Pour finir notre analyse des fonctionnalités proposées par le jeu nous avons d
 
 ![Diagramme des cas d'utilisations](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/useCaseJouerPartie.png?raw=true "Diagramme représentant les différentes possibilitées qui s'offrent aux acteurs lors du déroulement d'une partie")
 
-fig. 7 Diagramme des cas d'utilisations pour la fonctionnalité "Jouer partie"
+**fig. 8 Diagramme des cas d'utilisations pour la fonctionnalité "Jouer partie"**
 
 Le diagramme qui nous intéresse ici est celui qui concerne le déroulement d'une partie. Il est le centre du jeu et justifie l'existence même du moteur graphique, c'est aussi l'une des parties les plus complètes où chaque acteur à un rôle à jouer. Ce diagramme montre bien les nombreuses actions que le joueur ou l'IA peuvent faire pour remporter le jeu, qu'ils s'agissent des relations diplomatiques avec d'autres joueurs ou de la création de troupe. Le jeu a donc besoin d'implémenter un nombre important d'élément comme la gestion des troupes, la construction de bâtiment, le commerce, la guerre, la récolte de ressources, ... . Il met également en avant un point important de tout jeu vidéo d'envergure, la possibilité de faire apparaître une console qui permet d'appeler directement des fonctions javascript pour par exemple tester de nouveaux élèments non implémentés.
 
@@ -136,7 +138,7 @@ Notre analyse des packages a pour but de mieux comprendre comment le projet a é
 Comme point de départ pour comprendre la répartition des packages dans le code source nous avons utilisé le diagramme fourni par CodeScene ci-dessous.
 ![Diagramme codescene](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/SchemaCodeScene.JPG?raw=true "Diagramme représentant les packages organisés par langage et taille de fichier")
 
-fig. 8 Diagramme CodeScene avec les langages les plus utilisées par packages
+**fig. 9 Diagramme CodeScene avec les langages les plus utilisées par packages**
 
 Celui-ci a la particularité de montrer la répartition des langages à travers les packages mais aussi un autre problème dont nous parlerons en détail dans la partie suivante. Dans source on retrouve majoritairement le moteur du jeu écrit en C++. Dans le dossier build on retrouve les outils externes au logiciel qui seront ajoutés au moment de la compilation comme Premake un outil open source pour optimiser la compilation, les langages majoritaires sont le C pour premake notamment et le lua. Libraries contient comme son nom l'indique les libraries que le projet utilise, le langage utilisé est ici majoritairement du C++. Enfin le dossier mods qui se situt non à la racine du code source mais dans Binaries contient comme son nom l'indique les mods mais également les scripts javascript qui seront interprétés par le moteur Pyrogenesis.
 
@@ -147,6 +149,7 @@ Grâce à ce diagramme nous avons pu voir que le jeu était en faite divisé en 
 Nous allons maintenant aborder un point important de l'architecture et qui selon mériterait une amélioration. Le problème qui concerne la répartition du code source dans les différents dossiers est illustré dans le diagramme suivant.
 
 ![Diagramme des packages simplifié](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/ProblemePackage.png?raw=true "Diagramme des packages simplifié")
+**fig. 10 Diagramme des packages simplifié**
 
 Le diagramme représente les principaux packages du projet organisé sous la forme d'un arbre. Le but de ce diagramme est de montrer la répartition des lignes de codes à travers les packages. La première chose qu'on peut remarquer avec ce diagramme c'est que parmi tous les package représentés, seuls 4 d'entre eux intègrent la quasi totalité du code source dont le plus important "public" avec ses plus de 2 000 000 de lignes dont 112.152 lignes de javascript, le reste étant essentiellement des fichiers xmls servant à stocker les informations. Le second point concerne la profondeur de l'arbre à laquelle se trouve les fichiers javascript dans "public", ils sont difficiles à trouver de plus leur emplacement ne mets pas en avant leur lien très étroit avec le moteur du jeu, il est facile de s'imaginer qu'il s'agit de modes supplémentaires et optionelles alors qu'il n'en est rien. Nous avons donc affaire ici à un problème de visibilité sur le projet qui impacte la compréhension du projet plus que les performances par exemple.
 
@@ -158,19 +161,19 @@ Le second problème de cette architecture c'est qu'elle occassionne beaucoup de 
 
 ![Diagramme des dépendances](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/ArchInternalDependencies-DirectoryStructure.png?raw=true "Diagramme des dépendances entre packages")
 
-fig. 9 Diagramme des dépendances entre packages
+**fig. 11 Diagramme des dépendances entre packages**
 
 Celui-ci permet de remarquer que les différents packages ne sont pas tous bien organisé en dossiers plus petit, ce qui peut poser problème pour la compréhension du projet, par exemple dans le package "graphics" qui est très petit, on trouve 118 fichiers, 40 classes et 25 735 lignes de code ce qui rends l'exploration laborieuse. De plus le diagramme de package ne permet pas sous cette forme de reconnaître les élèments les plus importants de l'architecture comme la gestion des graphismes dans "graphics". En effet ce package possède un diagramme de classe très imposant comme montré ci-dessous à la figure 11.
 
 ![Diagramme des classes graphics](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/ClassDiagramGraphics.JPG?raw=true "Diagramme de classe de graphics")
 
-fig. 11 Diagramme des classes du package "graphics"
+**fig. 12 Diagramme des classes du package "graphics"**
 
 Mais celui-ci n'est pas divisé en sous-partie comme dans le package tools (voir figure 12).
 
 ![Diagramme de packages de tools et graphics](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/PackageToolsDiagram.png?raw=true "Diagramme de packages du package Tools et du package Graphics")
 
-fig. 12 Diagramme de packages du package "Tools" et du package "Graphics"
+**fig. 13 Diagramme de packages du package "Tools" et du package "Graphics"**
 
 L'organisation des packages pourrait donc être un point intéressant à améliorer pour le projet pour offrir une meilleure visibilité et facilité le refactoring de certaines parties du code.  
 <div style="page-break-after: always;"></div>
@@ -179,12 +182,13 @@ Le diagramme des classes étant assez grands et complexes, regroupant 655 classe
 
 ![Grand diagramme des classes](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/BigClassDiagram.JPG?raw=true "Diagramme des classes représentant les packages les plus importants")
 
-fig. 13 Diagramme des classes non exhaustif du package source
+**fig. 14 Diagramme des classes non exhaustif du package source**
 
 #### 1. Structure globale du code source
 Pour représenter la structure globale du package nous avons fait un diagramme avec les principales classes permettant de gérer le jeu.
 
 ![Structure du diagramme des classes](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/ConstructionLogique.png?raw=true "Diagramme des classes représentant les classes les plus importante permettant le déroulement du jeu")
+**fig. 15 Diagramme des classes représentant les classes les plus importante permettant le déroulement du jeu**
 
 Le principale point à retenir est cette architecture en arbre. Il existe plusieurs grandes classes dans le code qui regroupe d'autres éléments plus petits et ainsi de suite on retrouve donc une certaine hiérarchie dans la structure logique du moteur. Globalement le jeu est orchestré par la classe <CGame> qui contient le monde de manière générale et <CSimulation2> qui permet de connecter les éléments entre eux pour créer un monde vivant. On utilise donc ici des classes englobantes qui favorisent la composition plutôt que l'héritage entre les classes, ceci permet également de mieux organisé le code.
 
@@ -194,13 +198,13 @@ Pour donner un exemple plus précis nous avons donc décidé de présenter un é
 
 ![Diagramme des classes Unité](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/ClassDiagramCUnit.JPG?raw=true "Diagramme représentant les classes permettant de gérer un ensemble de troupes")
 
-fig. 14 Partie du diagramme des classes consernant la gestion des unités
+**fig. 16 Partie du diagramme des classes consernant la gestion des unités**
 
 Cette partie du diagramme est assez représentative du reste du code. On trouve une classe de base gérant les unités appelées "CUnit" celle-ci comprend notamment un objet animation et un objet model pour la représentation graphique de l'unité. Ce qui est intéressant ici c'est qu'il existe une classe spécialisée appelée "CUnitManager" qui permet de gérer toutes les unités au même endroit et de rapidement faire des opérations dessus. Ce schéma se retrouve souvent dans le logiciel sans doute pour pourvoir plus facilement optimiser l'usage de la mémoire, ce problème étant très courant dans les jeux vidéos. La classe "CUnit" utilise également un Abstract Design Pattern avec un constructeur privée et une méthode static "Create" se chargeant des allocations mémoires à faire, mais nous reviendrons sur les Design Patterns dans une autre partie. La classe <CUnitManager> est ensuite relié à une autre partie du code que voici.
 
 ![Diagramme des classes  SimContext](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/ClassDiagramSimContext.JPG?raw=true "Diagramme représentant le contexte de la simulation")
 
-fig. 15 Diagramme UML de la classe "CSimContext" du package Simulation2
+**fig. 17 Diagramme UML de la classe "CSimContext" du package Simulation2**
 
 Il s'agit du contexte auquel va se référer le logiciel lorsqu'une partie sera lancée. Ce contexte possède donc un gestionnaire d'unités avec un terrain, un gestionnaire d'entité regroupant tous les types d'objet qui peuvent intervenir dans une partie et un gestionnaire de composants. Cet object regroupe donc un grand nombre d'informations essentielles au bon déroulement d'une partie.
 
@@ -213,7 +217,7 @@ Dans cette partie nous allons juste aborder un point interessant dans lequel nou
 
 ![Diagramme de séquence](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/SequenceDiagram1.JPG?raw=true "Diagramme de séquence dans le cas d'une partie jouée contre une IA")
 
-fig. 16 Diagramme de séquence dans le cas d'une partie jouée contre une IA
+**fig. 18 Diagramme de séquence dans le cas d'une partie jouée contre une IA**
 
 Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionnement du logiciel. Le moteur de jeu gère ici l'aspect controller, il reçoit des évènements puis appel en consèquence les bons modules chacun gèrant une partie du logiciel comme l'IA, le rendu, la caméra, le pathfinding, les animations, etc ... .
 
@@ -244,18 +248,19 @@ Nous avons choisi de regarder ce dossier car il nous semble une des parties cent
 Il définit les classes utilisées par la simulation. Les composants qui implémentent la logique du moteur sont inclus ici, ainsi que les classes de sérialisation et d'aide. Certains composants sont implémentés en JavaScript et définissent optionnellement les interfaces JavaScript et C++ (ces composants sont inclus par mods, dans le répertoire binaries\data).
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testBetterCodeSimulation2.png?raw=true "Analyse de la qualité du dossier simulation2 avec BetterCodeHub")
 
-fig. 17 Analyse de la qualité du dossier simulation2 avec BetterCodeHub
+**fig. 19 Analyse de la qualité du dossier simulation2 avec BetterCodeHub**
 
 
 D'après la figure ci-dessus nous pouvons constater que ce dossier malgré son importance comporte de nombreux points faibles du point de vue de BetterCodeHub.
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Short%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "Analyse BetterCodeHub sur la taille des méthodes")
 
-fig. 18 Analyse de la qualité sur la taille des méthodes
+**fig. 20 Analyse de la qualité sur la taille des méthodes**
+
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Write%20Simple%20Units%20of%20Code%20Better%20Code%20Hub.png?raw=true "
 Analyse BetterCodeHub sur la simplicité des méthodes")
 
-fig. 19 Analyse de la qualité sur la simplicité des méthodes
+**fig. 21 Analyse de la qualité sur la simplicité des méthodes**
 
 Dans ces analyses nous pouvons voir que certaines méthodes font largement plus que les 15 lignes de codes recommandées. En regardant plus attentivement les fichiers concernés , nous pouvons en déduire qu'il serait effectivement possible de plus fractionner en des sous fonctions pour réduire ce nombre de lignes. Ce qui aurait aussi comme conséquences d'augmenter la simplicité des méthodes.
 
@@ -263,7 +268,7 @@ Dans ces analyses nous pouvons voir que certaines méthodes font largement plus 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/Nombre%20parametres%20methodes%20Code%20Better%20Code%20Hub.png?raw=true "
 Analyse BetterCodeHub sur le nombre de paramètres des méthodes")
 
-fig. 20 Analyse BetterCodeHub sur le nombre de paramètres des méthodes
+**fig. 22 Analyse BetterCodeHub sur le nombre de paramètres des méthodes**
 
 Nous pouvons voir un problème sur le nombre de paramètre pouvant atteindre le nombre de 10. Certains cas pourrait être évité , notamment en créant des structures. Comme par exemple dans la fonction suivante où une structure de coordonnées aurait pu être mise en place :
 
@@ -287,7 +292,7 @@ static void AddTerrainEdges(std::vector<Edge>& edges, std::vector<Vertex>& verte
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/AutomatesTest%20Code%20Better%20Code%20Hub.png?raw=true "
 Analyse BetterCodeHub sur l'automatisation des test")
-fig. 21 Analyse BetterCodeHub sur l'automatisation des test
+**fig. 23 Analyse BetterCodeHub sur l'automatisation des test**
 
 
 Nous pouvons voir que d'après BetterCodeHub il n'y a aucun test automatisé. Ce serait donc un point à améliorer. Cependant il y a quand même un sous-dossier tests dans cette section.
@@ -300,7 +305,7 @@ Avec CodeScene nous avons pu retirer quelques informations parmi les fichiers pr
 
 ![Analyse CodeScene](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/refactoring%20target.png?raw=true "
 Analyse CodeScene refactoring candidats")
-fig. 22 Analyse CodeScene pour trouver les candidats au refactoring
+**fig. 24 Analyse CodeScene pour trouver les candidats au refactoring**
 
 Nous avons regardé le fichier UnitIA.js suite à cela , et nous avons pu noter la grosseur d'un tel fichier : 6140 lignes. Nous émettons donc l'hypothèse que ce fichier pourrait être réduit en étant séparé en plusieurs modules.
 
@@ -313,17 +318,17 @@ Gamesetup.js possède également un nombre de ligne assez conséquent : 2331 , q
 Nous avons également analyser binaries/data avec BetterCode et voici ce que nous en avons retiré : 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinaries.png?raw=true "
 Analyse BetterCodeHub binaries")
-fig. 23 Analyse BetterCodeHub sur le dossier binaries
+**fig. 25 Analyse BetterCodeHub sur le dossier binaries**
 
 Nous pouvons voir que sa notation est plus élévé que l'analyse de simulation2 , cependant il y a des problème récurrents , avec les métriques de qualités de : Write Short Units of Code et Write Simple Units of Code.
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinariesunitcode.png?raw=true "
 Analyse BetterCodeHub binaries")
-fig. 24 Analyse BetterCodeHub Write Simple Units of Code sur le dossier binaries
+**fig. 26 Analyse BetterCodeHub Write Simple Units of Code sur le dossier binaries**
 
 ![Analyse BetterCodeHub](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/testbettercodehubbinarieswriteshort.png?raw=true "
 Analyse BetterCodeHub binaries")
-fig. 25 Analyse BetterCodeHub Write Shorts Units of Code sur le dossier binaries
+**fig. 27 Analyse BetterCodeHub Write Shorts Units of Code sur le dossier binaries**
 
 
 
@@ -346,7 +351,7 @@ Il y a plusieurs points faibles dans les parties que nous avons étudié. Cepend
 
 ![Analyse CodeScene](https://github.com/Bhastyen/AnalyseGenieLogiciel/blob/master/Images/exemple%20documentations.png?raw=true "
 Exemple de la documentation")
-fig. 26 Exemple de la documentation
+**fig. 28 Exemple de la documentation**
 
 Cependant les ajouts qui pourraient être faits sont par exemple une section de mise en évidence de design pattern à utiliser et dans quels cas, une section expliquant l'importance de la création de sous-méthode , la gestion de paramètre. Ce genre de projet devrait conseiller l'utilisation de logiciel comme Better Code Hub et CodeScene lors du développement pour éviter les problèmes que nous avons rencontré.
 <div style="page-break-after: always;"></div>
