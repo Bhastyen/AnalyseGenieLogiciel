@@ -4,6 +4,8 @@
 Duraj Bastien et Carreteros Laetitia
 UQAC, 05 décembre 2018
 
+<div style="page-break-after: always;"></div>
+
 #### Plan
 1. Introduction
 2. Description du logiciel
@@ -30,7 +32,7 @@ UQAC, 05 décembre 2018
 	4. Conclusion sur la qualité du code
 5. Conclusion
 
-
+<div style="page-break-after: always;"></div>
 ## Introduction
 
  Nous allons ici analyser un jeu vidéo libre : 0 A.D. . Il s'agit d'un jeu de stratégie en temps réel, en opposition au jeu de stratégie au tour par tour. Celui-ci propose de jouer avec une dizaine de civilisations ayant vécu de l'an 500 av. JC jusqu'à l'an 0. Le jeu peut être joué aussi bien tout seul qu'à plusieurs.
@@ -50,7 +52,7 @@ fig. 0 Chronologie simplifié de 0.a.d
  De plus depuis l'ouverture du projet celui-ci a beaucoup progressé et est devenue très complet :  partie solo, partie multijoueur, didacticiel, éditeur de scénarios, support pour les mods, ect... , cherchant à atteindre un niveau de qualité proche des jeux commerciaux.
 
 Il serait donc intéressant d'analyser ce logiciel et ceci sous plusieurs angles en commençant par une analyse architecturale en prenant en compte 4 vues : Logical view, Process view, Development view et Deployment view. Une fois cette analyse effectuée nous analyserons la qualité du code grâce à plusieurs métriques puis nous finirons avec l'analyse des Design Patterns présent dans le projet ainsi que leurs avantages et inconvénients.
-
+<div style="page-break-after: always;"></div>
 ## Description du logiciel
 Avant de nous plonger dans l'analyse formelle du logiciel nous allons décrire le jeu dans son fonctionnement et ses principales interfaces. Il s'agit d'un jeu de stratégie, le but est de battre l'adversaire ou les adversaires suivant un objectif précis. pour cela on choisit une civilisation que l'on va diriger sur plusieurs aspects. Le jeu se présente avec une Caméra en vue de dessus assurant une vue globale sur la partie et permettant de mieux gérer ses unités et ses bâtiments. La figure 5 permet d'avoir un aperçu de ce concept. Passons maintenant à la présentation du jeu tel que les développeurs l'on conçut.
 
@@ -95,6 +97,7 @@ fig. 5 Interface de jeu lors d'une partie
 
 Ce premier pas dans les nombreuses fonctionnalités du jeu permet dans un premier temps de comprendre le but recherché par les développeur : créer un jeu de stratégie open source le plus complet possible avec un grand niveau de qualité. Puis dans un second temps de mieux comprendre l'analyse des fonctionnalités présente dans la prochaine partie.   
 
+<div style="page-break-after: always;"></div>
 ## Analyse architecturale
 ### Les différents acteurs et scénarios possibles
 Pour comprendre le fonctionnement de ce logiciel nous avons tout d'abord analysé l'architecture de celui-ci en commençant par identifier les différents acteurs qui peuvent intervenir dans le déroulement du jeu et surtout les fonctionnalités proposées par le jeu. Pour représenter ces acteurs et les fonctionnalités auxquels ils sont rattachés nous avons décidé de modéliser nos résultats avec, dans un premier temps, un diagramme regroupant les différentes parties du logiciel et les acteurs, puis dans un second temps un diagramme détaillant de manière hiérarchique les fonctionnalités proposées dans le jeu. Pour finir sur cette partie nous avons créé un diagramme des cas d'utilisation pour la partie la plus intéressante et la plus complète : le déroulement d'une partie.
@@ -112,6 +115,8 @@ Nous avons donc diviser en 6 parties les différentes utilisations possibles du 
 
 En ce qui concerne l'organisation des fonctionnalités, celle-ci est très classique et on sent que le jeu s'est inspiré de son père spirituel Age of Empires. Les parties solo et multijoueur du titre sont séparées ce qui montre une envie de proposer plusieurs façons de jouer. On trouve également en premier dans le menu du jeu la possibilité d'apprendre à jouer avec un manuel, des tutoriels et des informations sur les éléments du jeu, encore une fois beaucoup de possibilités et une envie évidente d'inviter le joueur à rejoindre la communauté du jeu dans les meilleurs conditions. Le jeu propose encore deux fonctionnalités. La première permet de régler le jeu selon ses envies : graphismes, contrôle, son, ... on peut même apercevoir la gestion des mods qui permet à qui le veut de personnaliser le logiciel de manière très poussé. Encore une fois très complet. La dernière très intéressante permet de créer à l'envie des cartes pour le jeu, cet outil très puissant est d'ailleurs utilisé par les game designers pour générer des fichiers xml automatiquement représentant la carte à intégrer dans le jeu. Elle est ensuite lu par le moteur qui pourra la stocker en mémoire et l'afficher. L'outil qui s'appelle Atlas propose de nombreuses fonctionnalités non détaillé ici comme la création de terrains avec différents peinceaux, la possibilité de peindre le terrain avec des textures, ... . Le jeu se veut donc à tout point de vue complet et intègre un nombre impressionnant de fonctionnalité.
 
+<div style="page-break-after: always;"></div>
+
 #### 3. Cas d'utilisation d'une fonctionnalité
 Pour finir notre analyse des fonctionnalités proposées par le jeu nous avons détaillé une des grandes fonctionnalités à l'aide d'un diagramme de cas d'utilisation pour nous permettre de mieux comprendre les objectifs et les besoins d'un tel logiciel.
 
@@ -123,6 +128,7 @@ Le diagramme qui nous intéresse ici est celui qui concerne le déroulement d'un
 
 Ce diagramme permet donc de mieux appréhender les fonctionnalités mises en avant dans le jeu et de voir comment ces fonctionnalités ont été intégré dans l'architecture du projet grâce à la partie suivante portant sur les packages.
 
+<div style="page-break-after: always;"></div>
 ### Diagramme des packages (Development View)
 Notre analyse des packages a pour but de mieux comprendre comment le projet a été construit et s'il mériterait ou non des améliorations. Comme premier point nous avons remarqué que les packages du projet représentent souvent la fonctionnalité "technique" qu'ils traitent comme le rendu, les graphismes, ou encore l'intégration des scripts dans le moteur. Ce qui donne le diagramme suivant:
 
@@ -167,7 +173,7 @@ Mais celui-ci n'est pas divisé en sous-partie comme dans le package tools (voir
 fig. 12 Diagramme de packages du package "Tools" et du package "Graphics"
 
 L'organisation des packages pourrait donc être un point intéressant à améliorer pour le projet pour offrir une meilleure visibilité et facilité le refactoring de certaines parties du code.  
-
+<div style="page-break-after: always;"></div>
 ### Logical View
 Le diagramme des classes étant assez grands et complexes, regroupant 655 classes dans 17 packages. Il comprend également 298 228 lignes de code, en voici un aperçu non exhaustif:
 
@@ -216,19 +222,21 @@ Ce diagramme de séquence nous apprends un peu plus de chose quand au fonctionne
 ### Conclusion sur l'architecture
 
 D'après notre analyse le logiciel possède deux problèmes qui mériterait une amélioration, le problème des packages pas toujours très clair et le problème des classes trop grandes qui mériterait d'être subdiviser.
+<div style="page-break-after: always;"></div>
 
 ## Analyse de la qualité du code
 Pour analyser la qualité du code nous allons utiliser différentes métriques sur certaines parties de celui-ci. Pour déterminer si le code répond à ces critères nous avons utilisé différents logiciels , notamment CodeScene , BetterCodeHub et CppCheck.
 Les critères que nous avons retenu sont :
 
-La longueur de classe /
+La longueur de classe 
 
-La longueur des méthodes /
+La longueur des méthodes 
 
-Le nombre de paramètres /
+Le nombre de paramètres 
 
 
-Sur les 3.436.103 de lignes de code disponibles nous avons porté notre analyse sur certains dossiers qui nous semble plus important pour le jeu.
+Sur les 3.436.103 de lignes de code disponibles nous avons porté notre analyse sur certains dossiers qui nous semble plus important pour le jeu.On a déterminé cette importance par rapport aux langages et à leurs localisation.
+<div style="page-break-after: always;"></div>
 
 ### source/simulation2
 
@@ -341,6 +349,7 @@ Exemple de la documentation")
 fig. 26 Exemple de la documentation
 
 Cependant les ajouts qui pourraient être faits sont par exemple une section de mise en évidence de design pattern à utiliser et dans quels cas, une section expliquant l'importance de la création de sous-méthode , la gestion de paramètre. Ce genre de projet devrait conseiller l'utilisation de logiciel comme Better Code Hub et CodeScene lors du développement pour éviter les problèmes que nous avons rencontré.
+<div style="page-break-after: always;"></div>
 
 ## Conclusion
 En conclusion le projet est plutôt bien structuré et beaucoup d'efforts sont fait dans ce sens. Hormis les deux problèmes architecturaux soulignés dans la partie correspondante le projet fonctionne de toute évidence bien. Du côté de la qualité du code source de gros efforts sont fait pour instaurer de bonnes pratiques lors de la création du code cependant on remarque sur les fichiers analysés un manque de synthétisations des données dans les méthodes par exemple. Un manque du côté des tests automatisés d'après BetterCodeHub est également présent. Le projet pourrait donc être améliorer en suivant des pratiques supplémentaires comme l'automatisation des tests, en conseillant l'utilisation de logiciel comme BetterCodeHub pour le developpement.
